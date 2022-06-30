@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "473582151009",
+    "project_id": "chatui-9f32b",
+    "storage_bucket": "chatui-9f32b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473582151009:android:eb487543705538a62b9120",
+        "android_client_info": {
+          "package_name": "com.example.chat_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473582151009-a7ions9gmegpdl5j0oq4imhsjp3ipv2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZl8V_z6c3_yorT-KEweHJZJLViLCIwlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473582151009-a7ions9gmegpdl5j0oq4imhsjp3ipv2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

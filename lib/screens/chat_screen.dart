@@ -119,7 +119,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: Colors.red,
       appBar: AppBar(
         title: Text(
           widget.user.name,
