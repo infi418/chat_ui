@@ -24,10 +24,10 @@ class RecentChats extends StatelessWidget {
             itemBuilder: (BuildContext context, int index) {
               final Message chat = chats[index];
               return GestureDetector(
-                onTap: () => Navigator.push(
+                onTap: () => Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => ChatScreen(
+                    builder: (context) => ChatScreen(
                       user: chat.sender,
                     ),
                   ),

@@ -121,6 +121,7 @@ class _ChatScreenState extends State<ChatScreen> {
     return Scaffold(
       backgroundColor: Colors.red,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text(
           widget.user.name,
           style: TextStyle(

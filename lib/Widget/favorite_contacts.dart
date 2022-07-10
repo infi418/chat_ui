@@ -42,10 +42,10 @@ class FavoriteContacts extends StatelessWidget {
               itemCount: favorites.length,
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
-                  onTap: () => Navigator.push(
+                  onTap: () => Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => ChatScreen(
+                      builder: (context) => ChatScreen(
                         user: favorites[index],
                       ),
                     ),

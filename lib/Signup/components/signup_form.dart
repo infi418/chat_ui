@@ -36,7 +36,22 @@ class SignUpForm extends StatelessWidget {
               obscureText: true,
               cursorColor: kPrimaryColor,
               decoration: InputDecoration(
-                hintText: "Your password",
+                hintText: "Enter Your password",
+                prefixIcon: Padding(
+                  padding: const EdgeInsets.all(defaultPadding),
+                  child: Icon(Icons.lock),
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+            child: TextFormField(
+              textInputAction: TextInputAction.done,
+              obscureText: true,
+              cursorColor: kPrimaryColor,
+              decoration: InputDecoration(
+                hintText: "ReEnter Your password",
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(defaultPadding),
                   child: Icon(Icons.lock),
@@ -50,7 +65,7 @@ class SignUpForm extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => welcome()),
+                MaterialPageRoute(builder: (context) => LoginScreen()),
               );
             },
           ),

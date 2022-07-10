@@ -1,36 +1,38 @@
-// import 'package:flutter/material.dart';
+import 'package:chat_ui/Signup/components/social_icon.dart';
+import 'package:flutter/material.dart';
 
-// import '../../../screens/Signup/components/or_divider.dart';
-// import '../../../screens/Signup/components/social_icon.dart';
+import '../../../Signup/components/or_divider.dart';
+import '../../../Signup/components/social_icon.dart';
+import 'or_divider.dart';
 
-// class SocalSignUp extends StatelessWidget {
-//   const SocalSignUp({
-//     Key? key,
-//   }) : super(key: key);
+class SocalSignUp extends StatelessWidget {
+  const SocalSignUp({
+    Key? key,
+  }) : super(key: key);
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Column(
-//       children: [
-//         const OrDivider(),
-//         Row(
-//           mainAxisAlignment: MainAxisAlignment.center,
-//           children: <Widget>[
-//             SocalIcon(
-//               iconSrc: "assets/icons/facebook.svg",
-//               press: () {},
-//             ),
-//             SocalIcon(
-//               iconSrc: "assets/icons/twitter.svg",
-//               press: () {},
-//             ),
-//             SocalIcon(
-//               iconSrc: "assets/icons/google-plus.svg",
-//               press: () {},
-//             ),
-//           ],
-//         ),
-//       ],
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        const OrDivider(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            SocalIcon(
+              iconSrc: "assets/icons/facebook.svg",
+              press: () {},
+            ),
+            SocalIcon(
+              iconSrc: "assets/icons/twitter.svg",
+              press: () {},
+            ),
+            SocalIcon(
+              iconSrc: "assets/icons/google-plus.svg",
+              press: () {},
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
