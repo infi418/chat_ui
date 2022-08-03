@@ -1,8 +1,6 @@
 import 'package:chat_ui/Welcome/welcome_screen.dart';
 import 'package:chat_ui/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:chat_ui/Welcome/welcome_screen.dart';
-import 'package:chat_ui/constants.dart';
 
 void main() => runApp(const MyApp());
 
@@ -27,6 +25,27 @@ class MyApp extends StatelessWidget {
               minimumSize: const Size(double.infinity, 56),
             ),
           ),
+          appBarTheme: AppBarTheme(
+            color: Colors.red,
+            toolbarTextStyle: ThemeData.light()
+                .textTheme
+                .copyWith(
+                  headline6: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                )
+                .bodyText2,
+            titleTextStyle: ThemeData.light()
+                .textTheme
+                .copyWith(
+                  headline6: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                )
+                .headline6,
+          ),
           inputDecorationTheme: const InputDecorationTheme(
             filled: true,
             fillColor: kPrimaryLightColor,
@@ -39,7 +58,7 @@ class MyApp extends StatelessWidget {
               borderSide: BorderSide.none,
             ),
           )),
-      home: WelcomeScreen(),
+      home: const WelcomeScreen(),
     );
   }
 }

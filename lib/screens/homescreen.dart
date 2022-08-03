@@ -1,6 +1,3 @@
-import 'dart:ui';
-
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:chat_ui/Widget/category_selector.dart';
 import 'package:chat_ui/Widget/favorite_contacts.dart';
@@ -18,12 +15,12 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Colors.red,
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
           iconSize: 30.0,
           color: Colors.white,
           onPressed: () {},
         ),
-        title: Text(
+        title: const Text(
           'Chats',
           style: TextStyle(
             fontSize: 28.0,
@@ -33,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 0.0,
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             iconSize: 30.0,
             color: Colors.white,
             onPressed: () {},
@@ -47,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Container(
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.onSecondary,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(30.0),
                   topRight: Radius.circular(30.0),
                 ),
